@@ -1,106 +1,104 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "reset.css";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+h1, h2, h3, h4, p, ol, ul, blockquote {
+  width: 700px;
+  margin: 0 auto;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: lighter;
-  width: 600px;
   line-height: 1.4;
   /*  межстрочный   */
-  margin-left: 30px;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 40px;
-  font-family: "PT Sans Caption", sans-serif;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  color: #000000;
-}
-
-a {
-  color: #b1b1b1;
-  font-weight: 300;
+img {
+  display: block;
+  width: 1020px;
+  margin: 80px auto;
 }
 
 /*
 margin: top right bottom left
 */
+h1, h2, h3, h4 {
+  font-family: "PT Sans Caption" ,sans-serif;
+  font-weight: bold;
+  }
 
+ul {
+	list-style-type: circle;
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 h2 {
   font-size: 30px;
-  font-family: "PT Sans Caption", sans-serif;
-  font-weight: bold;
-  color: #515151;
+  margin-top: 30px;
   margin-bottom: 10px;
-  margin-top: 10px;
+}
+h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 20px;
+	margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h2 + h3 {
+	margin-top: -5px;
+}
+
+h3 + h4 {
+	margin-top: -5px;
+}
+
+p + div {
+	margin-top: -10px;
 }
 
 h1 + p {
-  color: #D1D1D1;
+	color: #a1a1a1;
 }
 
-p {
-  margin-bottom: 30px;
+blockquote {
+  font-family: "PT Sans", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+	margin-top: 20px;
+	margin-left: 20px;
 }
+p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+a, a:visited {
+  color: inherit;
+}
+
+div {
+	border-left-color: #4a4a4a;
+	border-left-style: solid;
+	border-left-width: medium;
+	width: 750px;
+	margin: 0 auto;
+  /*background-color: #e8e8e8;*/
+}
+
+
 
 /*
-p {
-  font-size: 20px;
-  font-family: helvetica;
-  font-weight: lighter;
-}
-h2 {
-  font-size: 50px;
-}
 .beFont {
   font-size: 100px;
 }
@@ -111,8 +109,5 @@ h2 {
 #yu01 {
   color: #C1C1C1;
   font-size: 20px;
-}
-a {
-  color: #cc0000;
 }
 */
