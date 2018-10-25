@@ -1,6 +1,14 @@
-h1, h2, h3, h4, p, ol, ul, blockquote {
+h1, h2, h3, h4, p, ol, article ul, blockquote {
   width: 700px;
   margin: 0 auto;
+}
+
+article {
+  overflow-y: scroll;
+
+  height: 100vh;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,19 +25,70 @@ body {
 img {
   display: block;
 
-  width: 1020px;
+  width: 700px;
   margin: 80px auto;
 }
 
+nav {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+
+  width: 250px;
+
+  transition: opacity 200ms linear;
+
+  opacity: 0.1;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+nav:hover {
+  opacity: 1;
+
+}
+
+nav ul > li {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul > li:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+nav ul li {
+  margin-bottom: 15px;
+}
+
+nav > ul > li:first-of-type {
+  font-weight: 600;
+}
+
+nav ul li ul li {
+  margin-top: 15px;
+  margin-left: 20px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li ul li:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
 /*
 margin: top right bottom left
 */
 h1, h2, h3, h4 {
   font-family: "PT Sans Caption" ,sans-serif;
   font-weight: bold;
-  }
+}
 
-ul {
+article ul {
 	list-style-type: square;
 }
 
@@ -101,19 +160,3 @@ div {
 	border-left-color: #4a4a4a;
   /*background-color: #e8e8e8;*/
 }
-
-
-
-/*
-.beFont {
-  font-size: 100px;
-}
-#warning {
-  color: #E1E1E1;
-  font-size: 25px;
-}
-#yu01 {
-  color: #C1C1C1;
-  font-size: 20px;
-}
-*/
